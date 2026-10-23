@@ -24,6 +24,7 @@ public class Calculadora {
             num2 = scanner.nextDouble();
 
             switch (operacion) {
+                 // Mejora realizada desde feature-multiplicacion
                 case 1 -> {
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
