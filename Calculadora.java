@@ -1,4 +1,3 @@
-
 // Versión 1.0 - Práctica de Entornos de Desarrollo por 
 import java.util.Scanner;
 
@@ -25,7 +24,11 @@ public class Calculadora {
             num2 = scanner.nextDouble();
 
             switch (operacion) {
+<<<<<<< HEAD
                  // Corrección de bug de sumas
+=======
+                 // Mejora realizada desde feature-multiplicacion
+>>>>>>> feature-multiplicacion
                 case 1 -> {
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
@@ -49,11 +52,15 @@ public class Calculadora {
                 default -> System.out.println("Opción no válida.");
                 case 5 -> {
                     resultado = Math.pow(num1, num2);
-                System.out.println("Resultado: " + num1 + " ^ " + num2 + " = " + resultado);
+                    System.out.println("Resultado: " + num1 + " ^ " + num2 + " = " + resultado);
                 }
-
             }
         } // Aquí finaliza el bloque 'try' y el scanner se cierra solo, ya no hace falta
           // "scanner.close()"
+    }
+
+    // Nueva función añadida para la práctica de Git
+    public int multiplicar(int a, int b) {
+        return a * b;
     }
 }
