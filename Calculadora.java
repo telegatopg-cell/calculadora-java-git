@@ -25,7 +25,7 @@ public class Calculadora {
             num2 = scanner.nextDouble();
 
             switch (operacion) {
-                 // Corrección de bug de suma
+                 // Corrección de bug de sumas
                 case 1 -> {
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
